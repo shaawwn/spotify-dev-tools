@@ -1,0 +1,1 @@
+Very simple app for visualizing and organizing Spotify data returned from the Analyze Track API
