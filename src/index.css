@@ -75,6 +75,9 @@ p, h1 {
 }
 /* || Nav */
 .navbar {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
   max-width: 100%;
   padding: 1rem;
   border-bottom : 1px solid white;
@@ -85,6 +88,16 @@ p, h1 {
   font-weight: bold;
 }
 
+.navbar__item {
+  background-color: var(--spotify-green);
+  padding: .5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar__item:hover {
+  background-color: var(--spotify-green-hover);
+}
 /* || Views */
 
 .primary {

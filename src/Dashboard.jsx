@@ -9,14 +9,18 @@ import Navbar from './components/Navbar';
 function Dashboard({code}) {
 
     const accessToken = useAuth(code)
-    const [currentView, setCurrentView] = useState('lookup')
+    const [currentView, setCurrentView] = useState('Track Analysis')
     const [features, setFeatures] = useState()
     const [analysis, setAnalysis] = useState()
     const [trackName, setTrackName] = useState()
     const [artistName, setArtistName] = useState()
 
+    function switchView() {
+
+    }
+
     function displayView(view) {
-        if(view === 'lookup') {
+        if(view === 'Track Analysis') {
             return(
                 <Lookup 
                     accessToken={accessToken}
