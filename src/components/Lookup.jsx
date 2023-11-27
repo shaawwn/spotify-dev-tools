@@ -51,13 +51,13 @@ function Lookup({accessToken, analyze}) {
                 "more danceable",
                 "more sad",
 
-                "less loud",
+                // "less loud",
                 "less energetic",
                 
                 "less danceable",
                 "more happy", // (happy/sad)
 
-                "more loud",
+                // "more loud",
                 "more energetic"
             ]
         }
@@ -68,13 +68,13 @@ function Lookup({accessToken, analyze}) {
                 features.danceability.toFixed(2), 
                 1 - features.valence.toFixed(2),
 
-                ((features.loudness * - 1) / 60).toFixed(2),
+                // ((features.loudness * - 1) / 60).toFixed(2),
                 1 - features.energy.toFixed(2),
 
                 1 - features.danceability.toFixed(2),
                 features.valence.toFixed(2),
 
-                1 - ((features.loudness * - 1) / 60).toFixed(2),
+                // 1 - ((features.loudness * - 1) / 60).toFixed(2),
                 features.energy.toFixed(2), 
 
             ]
